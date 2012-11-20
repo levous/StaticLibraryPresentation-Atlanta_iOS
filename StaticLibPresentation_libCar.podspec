@@ -8,9 +8,9 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/levous/StaticLibraryPresentation-Atlanta_iOS.git", :tag => "0.0.1" }
   s.platform     = :ios
 
-  s.source_files = 'Classes', 'libCar/**/*.{h,m}'
+  s.source_files = 'Classes', 'libCar/libCar/**/*.{h,m}'
 
-  s.public_header_files = 'libCar/**/*.h'
+  s.public_header_files = 'libCar/libCar/**/*.h'
 
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
