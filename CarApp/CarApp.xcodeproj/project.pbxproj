@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBECF622165BF45C00EB13CD /* liblibCar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBECF621165BF45C00EB13CD /* liblibCar.a */; };
 		FBFFCDCC165BECC8004E7ADD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFFCDCB165BECC8004E7ADD /* UIKit.framework */; };
 		FBFFCDCE165BECC8004E7ADD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFFCDCD165BECC8004E7ADD /* Foundation.framework */; };
 		FBFFCDD0165BECC8004E7ADD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFFCDCF165BECC8004E7ADD /* CoreGraphics.framework */; };
@@ -23,7 +24,6 @@
 		FBFFCDF2165BECC8004E7ADD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFFCDCD165BECC8004E7ADD /* Foundation.framework */; };
 		FBFFCDFA165BECC8004E7ADD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBFFCDF8165BECC8004E7ADD /* InfoPlist.strings */; };
 		FBFFCDFD165BECC8004E7ADD /* CarAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFFCDFC165BECC8004E7ADD /* CarAppTests.m */; };
-		FBFFCE14165BEDAC004E7ADD /* liblibCar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFFCE0F165BECE4004E7ADD /* liblibCar.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,30 +34,10 @@
 			remoteGlobalIDString = FBFFCDC6165BECC8004E7ADD;
 			remoteInfo = CarApp;
 		};
-		FBFFCE0E165BECE4004E7ADD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FBFFCE06165BECE4004E7ADD /* libCar.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FBFFCD8E165BEA30004E7ADD;
-			remoteInfo = libCar;
-		};
-		FBFFCE10165BECE4004E7ADD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FBFFCE06165BECE4004E7ADD /* libCar.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FBFFCD9F165BEA30004E7ADD;
-			remoteInfo = libCarTests;
-		};
-		FBFFCE12165BED9E004E7ADD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FBFFCE06165BECE4004E7ADD /* libCar.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = FBFFCD8D165BEA30004E7ADD;
-			remoteInfo = libCar;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FBECF621165BF45C00EB13CD /* liblibCar.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = liblibCar.a; path = "../libCar/build/Release-iphoneos/liblibCar.a"; sourceTree = "<group>"; };
 		FBFFCDC7165BECC8004E7ADD /* CarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFFCDCB165BECC8004E7ADD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FBFFCDCD165BECC8004E7ADD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,7 +60,6 @@
 		FBFFCDF9165BECC8004E7ADD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FBFFCDFB165BECC8004E7ADD /* CarAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarAppTests.h; sourceTree = "<group>"; };
 		FBFFCDFC165BECC8004E7ADD /* CarAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarAppTests.m; sourceTree = "<group>"; };
-		FBFFCE06165BECE4004E7ADD /* libCar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libCar.xcodeproj; path = ../libCar/libCar.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBFFCE14165BEDAC004E7ADD /* liblibCar.a in Frameworks */,
+				FBECF622165BF45C00EB13CD /* liblibCar.a in Frameworks */,
 				FBFFCDCC165BECC8004E7ADD /* UIKit.framework in Frameworks */,
 				FBFFCDCE165BECC8004E7ADD /* Foundation.framework in Frameworks */,
 				FBFFCDD0165BECC8004E7ADD /* CoreGraphics.framework in Frameworks */,
@@ -111,7 +90,7 @@
 		FBFFCDBC165BECC8004E7ADD = {
 			isa = PBXGroup;
 			children = (
-				FBFFCE06165BECE4004E7ADD /* libCar.xcodeproj */,
+				FBECF621165BF45C00EB13CD /* liblibCar.a */,
 				FBFFCDD1165BECC8004E7ADD /* CarApp */,
 				FBFFCDF5165BECC8004E7ADD /* CarAppTests */,
 				FBFFCDCA165BECC8004E7ADD /* Frameworks */,
@@ -185,15 +164,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FBFFCE07165BECE4004E7ADD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FBFFCE0F165BECE4004E7ADD /* liblibCar.a */,
-				FBFFCE11165BECE4004E7ADD /* libCarTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,7 +178,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				FBFFCE13165BED9E004E7ADD /* PBXTargetDependency */,
 			);
 			name = CarApp;
 			productName = CarApp;
@@ -254,12 +223,6 @@
 			mainGroup = FBFFCDBC165BECC8004E7ADD;
 			productRefGroup = FBFFCDC8165BECC8004E7ADD /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = FBFFCE07165BECE4004E7ADD /* Products */;
-					ProjectRef = FBFFCE06165BECE4004E7ADD /* libCar.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				FBFFCDC6165BECC8004E7ADD /* CarApp */,
@@ -267,23 +230,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		FBFFCE0F165BECE4004E7ADD /* liblibCar.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = liblibCar.a;
-			remoteRef = FBFFCE0E165BECE4004E7ADD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FBFFCE11165BECE4004E7ADD /* libCarTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = libCarTests.octest;
-			remoteRef = FBFFCE10165BECE4004E7ADD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FBFFCDC5165BECC8004E7ADD /* Resources */ = {
@@ -350,11 +296,6 @@
 			isa = PBXTargetDependency;
 			target = FBFFCDC6165BECC8004E7ADD /* CarApp */;
 			targetProxy = FBFFCDF3165BECC8004E7ADD /* PBXContainerItemProxy */;
-		};
-		FBFFCE13165BED9E004E7ADD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = libCar;
-			targetProxy = FBFFCE12165BED9E004E7ADD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -515,6 +456,7 @@
 				FBFFCE02165BECC8004E7ADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBFFCE03165BECC8004E7ADD /* Build configuration list for PBXNativeTarget "CarAppTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +465,7 @@
 				FBFFCE05165BECC8004E7ADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
