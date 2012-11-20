@@ -15,6 +15,7 @@
 		FBFFCDAD165BEA30004E7ADD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBFFCDAB165BEA30004E7ADD /* InfoPlist.strings */; };
 		FBFFCDB0165BEA30004E7ADD /* libCarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFFCDAF165BEA30004E7ADD /* libCarTests.m */; };
 		FBFFCDBB165BEA47004E7ADD /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFFCDBA165BEA47004E7ADD /* Car.m */; };
+		FBFFCE17165BEF8E004E7ADD /* Car.h in Headers */ = {isa = PBXBuildFile; fileRef = FBFFCDB9165BEA47004E7ADD /* Car.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +31,7 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		FBFFCD8C165BEA30004E7ADD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
@@ -145,6 +146,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		FBFFCE16165BEF88004E7ADD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFFCE17165BEF8E004E7ADD /* Car.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		FBFFCD8D165BEA30004E7ADD /* libCar */ = {
 			isa = PBXNativeTarget;
@@ -153,6 +165,7 @@
 				FBFFCD8A165BEA30004E7ADD /* Sources */,
 				FBFFCD8B165BEA30004E7ADD /* Frameworks */,
 				FBFFCD8C165BEA30004E7ADD /* CopyFiles */,
+				FBFFCE16165BEF88004E7ADD /* Headers */,
 			);
 			buildRules = (
 			);
@@ -328,8 +341,10 @@
 				DSTROOT = /tmp/libCar.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libCar/libCar-Prefix.pch";
+				INSTALL_PATH = /;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = Headers;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -340,8 +355,10 @@
 				DSTROOT = /tmp/libCar.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libCar/libCar-Prefix.pch";
+				INSTALL_PATH = /;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = Headers;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -395,6 +412,7 @@
 				FBFFCDB5165BEA30004E7ADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBFFCDB6165BEA30004E7ADD /* Build configuration list for PBXNativeTarget "libCarTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +421,7 @@
 				FBFFCDB8165BEA30004E7ADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
