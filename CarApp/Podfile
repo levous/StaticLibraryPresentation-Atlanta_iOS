@@ -1,3 +1,3 @@
 platform :ios
 
-pod 'StaticLibraryPresentation-Atlanta_iOS', :git => 'https://github.com/levous/StaticLibraryPresentation-Atlanta_iOS.git'
+pod 'StaticLibPresentation_libCar', :git => 'https://github.com/levous/StaticLibraryPresentation-Atlanta_iOS.git',  :branch => "Step4_CocoaPods"
