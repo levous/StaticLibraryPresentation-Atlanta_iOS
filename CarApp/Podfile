@@ -1,0 +1,3 @@
+platform :ios
+
+pod 'StaticLibraryPresentation-Atlanta_iOS', :git => 'https://github.com/levous/StaticLibraryPresentation-Atlanta_iOS.git'
